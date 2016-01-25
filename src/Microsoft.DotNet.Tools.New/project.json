@@ -15,7 +15,7 @@
         }
     },
     "compileExclude": [ "Template/**" ],
-    "resource": [ "Template/**" ],
+    "resource": [ "Template/NuGet.Config", "Template/Program.cs", "Template/project.json" ],
     "frameworks": {
         "dnxcore50": {
             "imports": "portable-net451+win8"
