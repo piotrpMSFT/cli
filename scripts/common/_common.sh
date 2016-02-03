@@ -13,6 +13,7 @@ COMMONDIR="$( cd -P "$( dirname "$COMMONSOURCE" )" && pwd )"
 
 source "$COMMONDIR/_prettyprint.sh"
 source "$COMMONDIR/_rid.sh"
+source "$COMMONDIR/_file_descriptor_limit.sh"
 
 # TODO: Replace this with a dotnet generation
 export TFM=dnxcore50
