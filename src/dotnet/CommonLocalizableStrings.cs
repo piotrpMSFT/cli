@@ -7,7 +7,7 @@
         public const string ProjectAlreadyHasAreference = "Project already has a reference to `{0}`.";
         public const string ProjectReferenceCouldNotBeFound = "Project reference `{0}` could not be found.";
         public const string ProjectReferenceRemoved = "Project reference `{0}` removed.";
-        
+
         // General purpose words
         public const string RequiredArgument = "Required argument";
         public const string Option = "Option";
