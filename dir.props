@@ -1,17 +1,18 @@
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Condition=" Exists('obj/Microsoft.DotNet.Cli.HostInfo.props') "
+          Project="obj/Microsoft.DotNet.Cli.HostInfo.props" />
   <Import Project="build/Microsoft.DotNet.Cli.DependencyVersions.props" />
 
-  <!-- NuGet Information -->
   <PropertyGroup>
     <RepoRoot>$(MSBuildThisFileDirectory)</RepoRoot>
-    
+    <HostInfoProps>$(RepoRoot)/obj/HostInfo.props</HostInfoProps>
+
     <NuGetPackagesDir>$(NUGET_PACKAGES)</NuGetPackagesDir>
     <NuGetPackagesDir Condition=" '$(NuGetPackagesDir)' == '' ">$(RepoRoot)/.nuget/packages</NuGetPackagesDir>
 
     <CLIBuildDll>$(RepoRoot)/build_projects/dotnet-cli-build/bin/dotnet-cli-build.dll</CLIBuildDll>
 
     <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
-
 
     <CliVersionPrefix>1.0.0</CliVersionPrefix>
   </PropertyGroup>
